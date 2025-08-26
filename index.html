@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+
+    <div id="library">
+        <table id="table">
+            <th>Name</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read</th>
+            <th>Status</th>
+            <th>Remove</th>
+        </table>
+    </div>
+
+    <button id="btnNewBook" class="primary-btn">+</button>
+
+    <div id="bookModel" class="container hidden">
+        <div class="card">
+            <div class="card-image">
+                <h3 class="card-heading">
+                    Add a New Book
+                </h3>
+            </div>
+        
+    
+
+            <form class="card-form" id="bookForm">
+                <div class="input">
+                    <input type="text" id="bookName" class="input-field" required>
+                    <label class="input-label">Book Name</label>
+                </div>
+                
+                <div class="input">
+                    <input type="text" id="bookAuthor" class="input-field" required>
+                    <label class="input-label">Author</label>
+                </div>
+
+                <div class="input">
+                    <input type="number" id="bookPages" class="input-field" required>
+                    <label class="input-label">Pages</label>
+                </div>
+
+                <div class="checkbox-input">
+                    <input type="checkbox" id="bookRead">
+                    <label for="bookRead" class="checkbox-label">Read</label>
+                </div>
+
+                <div class="action">
+                    <button type="submit" class="action-button primary-btn" id="addBookBtn"> Add Book</button>
+                </div>
+
+                <div class="action">
+                    <button type="button" id="closeBookModal" class="action-button cancel-btn">Cancel</button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+    </body>
+</html>
